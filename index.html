@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Requester Pro</title>
+  </head>
+  <body class="container-fluid">
+    <h1 class="text-center">Resquester Pro</h1>
+    <h2>Request</h2>
+    <form id="form">
+      <h4>Data</h4>
+      <div class="d-flex">
+        <select name="method" id="method" class="form-control w-25"></select>
+        <input
+          type="text"
+          name="url"
+          id="url"
+          placeholder="URL"
+          class="form-control w-75 mx-1"
+          required
+        />
+        <input type="submit" value="Send" class="btn btn-primary" />
+      </div>
+      <div class="d-flex mt-2">
+        <textarea
+          name="data"
+          id="data"
+          placeholder="Body"
+          class="form-control"
+        ></textarea>
+      </div>
+      <div class="mt-2">
+        <h4>
+          Headers
+          <button type="button" class="btn btn-link" id="addHeader">add</button>
+        </h4>
+        <div id="headers"></div>
+      </div>
+      <div class="mt-2">
+        <h4>
+          Tests
+          <button type="button" class="btn btn-link" id="addTest">add</button>
+        </h4>
+        <div id="tests"></div>
+      </div>
+    </form>
+    <hr />
+    <h2>Response</h2>
+    <div class="mt-2">
+      <h4>Headers</h4>
+      <pre id="responseHeaders"></pre>
+    </div>
+    <div class="mt-2">
+      <h4>Tests</span></h4>
+      <pre id="responseTests"></pre>
+    </div>
+    <div class="mt-2">
+      <h4>Body <span id="statusCode"></span></h4>
+      <pre id="responseBody"></pre>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "requester-js",
+  "version": "1.0.0",
+  "description": "Simple App to test response from API, similar to Postman, Insomnia and many others.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Postman",
+    "Request",
+    "HTML",
+    "Insomnia",
+    "Vanilla",
+    "JS"
+  ],
+  "author": "Daniel Boggiano",
+  "license": "MIT"
+}
